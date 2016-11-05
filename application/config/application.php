@@ -16,6 +16,8 @@ $config['hashed'] = 'VFUUl2rWS6I5EdSFU2JJyQ==';
 
 $config['appkey'] = '1029384756';
 
+$config['appsalt'] = 'abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789';
+
 $config['lmanuser.usingbackendfrontend'] = TRUE;
 $config['user_id_column_name'] = "id_user";
 $config['profil_id_column_name'] = "id_profil";
