@@ -19,12 +19,62 @@ $detail = isset($detail) ? $detail : FALSE;
                 <div class="panel-body">
 
                     <div class="form-group">
-                        <label class="col-md-3 col-xs-12 control-label">ID Kegiatan *</label>
+                        <label class="col-md-3 col-xs-12 control-label">Tahun *</label>
+                        <div class="col-md-6 col-xs-12">
+                            <?php
+                            $default_value_tahun = $detail ? $detail->tahun : date('Y');
+                            echo dropdown_tahun('tahun', date('Y'), 5, 'class="form-control select"');
+                            ?>
+                            <?php /* <input type="text" name="tahun" class="form-control" value="<?php echo $detail ? $detail->tahun : ""; ?>"> */ ?>                                   
+                            <span class="help-block">Tahun. contoh : 2016</span>
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        <label class="col-md-3 col-xs-12 control-label">Nama Kegiatan</label>
+                        <div class="col-md-6 col-xs-12"> 
+                            <input type="text" name="kegiatan_tugas_jabatan" class="form-control" value="<?php echo $detail ? $detail->kegiatan_tugas_jabatan : ""; ?>">                                      
+                            <span class="help-block">Tahun. contoh : 2016</span>
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        <label class="col-md-3 col-xs-12 control-label">Tahun *</label>
                         <div class="col-md-6 col-xs-12">                                            
                             <div class="input-group">
-                                <input type="text" name="id_kegiatan" class="form-control" value="<?php echo $detail ? $detail->idkegiatan : ""; ?>">
+                                <input type="text" name="tahun" class="form-control" value="<?php echo $detail ? $detail->tahun : ""; ?>">
                             </div>                                            
-                            <span class="help-block">Isikan sesuai dengan kode provinsi yang tertera pada Ketetapan Kementerian Dalam Negeri tentang Wilayah Indonesia.</span>
+                            <span class="help-block">Tahun. contoh : 2016</span>
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        <label class="col-md-3 col-xs-12 control-label">Tahun *</label>
+                        <div class="col-md-6 col-xs-12">                                            
+                            <div class="input-group">
+                                <input type="text" name="tahun" class="form-control" value="<?php echo $detail ? $detail->tahun : ""; ?>">
+                            </div>                                            
+                            <span class="help-block">Tahun. contoh : 2016</span>
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        <label class="col-md-3 col-xs-12 control-label">Tahun *</label>
+                        <div class="col-md-6 col-xs-12">                                            
+                            <div class="input-group">
+                                <input type="text" name="tahun" class="form-control" value="<?php echo $detail ? $detail->tahun : ""; ?>">
+                            </div>                                            
+                            <span class="help-block">Tahun. contoh : 2016</span>
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        <label class="col-md-3 col-xs-12 control-label">Tahun *</label>
+                        <div class="col-md-6 col-xs-12">                                            
+                            <div class="input-group">
+                                <input type="text" name="tahun" class="form-control" value="<?php echo $detail ? $detail->tahun : ""; ?>">
+                            </div>                                            
+                            <span class="help-block">Tahun. contoh : 2016</span>
                         </div>
                     </div>
 
@@ -41,7 +91,7 @@ $detail = isset($detail) ? $detail : FALSE;
                 </div>
                 <div class="panel-footer">
                     <button type="submit" class="btn-primary btn pull-right">Submit</button>
-                    <a href="<?php echo base_url("back_end/".$active_modul."/index"); ?>" class="btn-default btn">Batal / Kembali</a>
+                    <a href="<?php echo base_url("back_end/" . $active_modul . "/index"); ?>" class="btn-default btn">Batal / Kembali</a>
                 </div>
             </div>
         </form>

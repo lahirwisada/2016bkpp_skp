@@ -20,10 +20,9 @@ class model_ref_kegiatan extends ref_kegiatan {
     public function __construct() {
         parent::__construct();
     }
-
+    
     public function all($force_limit = FALSE, $force_offset = FALSE) {
         return parent::get_all(array(
-                    "id_kegiatan",
                     "tahun",
                     "kegiatan_tugas_jabatan",
                     "angka_kredit",

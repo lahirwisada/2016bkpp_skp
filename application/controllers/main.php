@@ -32,7 +32,6 @@ class Main extends LWS_Controller {
         return $this->lmanuser->get("user_detail", $this->my_side);
     }
     
-    
 }
 
 ?>
