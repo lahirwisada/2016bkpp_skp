@@ -51,28 +51,10 @@ $next_list_number = isset($next_list_number) ? $next_list_number : 1;
                                             No
                                         </th>
                                         <th>
-                                            ID Kegiatan
+                                            Kode Kegiatan
                                         </th>
                                         <th>
-                                            Tahun
-                                        </th>
-										<th>
-                                            kegiatan_tugas_jabatan
-                                        </th>
-										<th>
-                                            angka_kredit
-                                        </th>
-										<th>
-                                            kuantitas
-                                        </th>
-										<th>
-                                            kualitas
-                                        </th>
-										<th>
-                                            waktu
-                                        </th>
-										<th>
-                                            biaya
+                                            Kegiatan
                                         </th>
                                         <th width="15%">Aksi</th>
                                     </tr>
@@ -84,14 +66,12 @@ $next_list_number = isset($next_list_number) ? $next_list_number : 1;
                                                 <td>
                                                     <?php echo $next_list_number; ?>
                                                 </td>
-                                                <td><?php echo beautify_str($record->id_kegiatan) ?></td>
-                                                <td><?php echo beautify_str($record->tahun) ?></td>
-												<td><?php echo beautify_str($record->nama_kegiatan) ?></td>
-												<td><?php echo beautify_str($record->angka_kredit) ?></td>
-												<td><?php echo beautify_str($record->kuantitas) ?></td>
-												<td><?php echo beautify_str($record->kualitas) ?></td>
-												<td><?php echo beautify_str($record->waktu) ?></td>
-												<td><?php echo beautify_str($record->biaya) ?></td>
+                                                <td>
+                                                    <?php echo beautify_str($record->kode_kegiatan) ?>
+                                                </td>
+                                                <td>
+                                                    <?php echo beautify_str($record->nama_kegiatan) ?>
+                                                </td>
                                                 <td>
                                                     <div class="btn-group btn-group-sm">
                                                         <a class="btn btn-default" href="<?php echo base_url("back_end/" . $active_modul . "/detail") . "/" . $record->id_kegiatan; ?>">Ubah</a>

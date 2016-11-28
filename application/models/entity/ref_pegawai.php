@@ -45,7 +45,12 @@ class Ref_pegawai extends LWS_model {
         array("nip", ""),
         array("no_kep", ""),
         array("tmt_peg", ""),
-        array("created_date", ""), array("created_by", ""), array("modified_date", ""), array("modified_by", ""), array("record_active", ""),);
+        array("created_date", ""), 
+		array("created_by", ""), 
+		array("modified_date", ""),
+		array("modified_by", ""),
+		array("record_active", ""),
+		);
     
     protected $related_tables = array(
         "ref_status_perkawinan" => array(
