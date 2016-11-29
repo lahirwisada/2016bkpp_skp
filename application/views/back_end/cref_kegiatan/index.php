@@ -57,22 +57,22 @@ $next_list_number = isset($next_list_number) ? $next_list_number : 1;
                                             Tahun
                                         </th>
 										<th>
-                                            kegiatan_tugas_jabatan
+                                            Kegiatan Tugas Jabatan
                                         </th>
 										<th>
-                                            angka_kredit
+                                            Angka Kredit
                                         </th>
 										<th>
-                                            kuantitas
+                                            Kuantitas
                                         </th>
 										<th>
-                                            kualitas
+                                            Kualitas
                                         </th>
 										<th>
-                                            waktu
+                                            Waktu
                                         </th>
 										<th>
-                                            biaya
+                                            Biaya
                                         </th>
                                         <th width="15%">Aksi</th>
                                     </tr>
