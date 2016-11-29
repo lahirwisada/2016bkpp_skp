@@ -2,9 +2,9 @@
 
 if (!defined("BASEPATH")) {
     exit("No direct script access allowed");
-} include_once "entity/ref_kegiatan_pegawai_tahunan.php";
+} include_once "entity/tr_kegiatan_pegawai_tahunan.php";
 
-class model_ref_kegiatan_pegawai_tahunan extends ref_kegiatan_pegawai_tahunan {
+class model_ref_kegiatan_pegawai_tahunan extends tr_kegiatan_pegawai_tahunan {
 
     protected $rules = array(
 		array("id_kegiatan_pegawai_tahunan", ""), 
@@ -32,7 +32,7 @@ class model_ref_kegiatan_pegawai_tahunan extends ref_kegiatan_pegawai_tahunan {
 
         $result = FALSE;
         if ($keyword) {
-            $this->db->order_by("id_kegiatan_pegawai_tahunan", "asc");
+            $this->db->order_by("id_pegawai", "asc");
             $this->db->where(" lower(" . $this->table_name . ".tahun) LIKE lower('%" . $keyword . "%') OR lower(" . $this->table_name . ".id_kegiatan) LIKE lower('%" . $keyword . "%')", NULL, FALSE);
             $result = $this->get_where();
         }

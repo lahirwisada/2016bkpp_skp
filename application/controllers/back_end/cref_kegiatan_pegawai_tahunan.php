@@ -8,7 +8,7 @@ class Cref_kegiatan_pegawai_tahunan extends Back_end {
     public $model = 'model_ref_kegiatan_pegawai_tahunan';
 
     public function __construct() {
-        parent::__construct('kelola_pustaka_pegawai', 'Pustaka Data Kegiatan Pegawai');
+        parent::__construct('kelola_pustaka_pegawai', 'Pustaka Data Sasaran Kerja Pegawai');
     }
 
     public function index() {
