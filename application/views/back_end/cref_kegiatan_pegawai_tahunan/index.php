@@ -72,7 +72,7 @@ $next_list_number = isset($next_list_number) ? $next_list_number : 1;
                                 </div>
                             <?php endforeach; ?>
                         <?php else: ?>
-                            <div>Tidak ada pegawai yang terdaftar.</div>
+                            <div>Tidak ada kegiatan pegawai yang terdaftar.</div>
                         <?php endif; ?>
                     </div>  
                     <div class="row">
