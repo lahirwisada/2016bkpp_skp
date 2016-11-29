@@ -4,7 +4,7 @@ if (!defined("BASEPATH")) {
     exit("No direct script access allowed");
 } include_once "entity/ref_kegiatan.php";
 
-class model_ref_kegiatan_pegawai_tahunan extends ref_kegiatan {
+class model_ref_kegiatan_pegawai extends ref_kegiatan {
 
     protected $rules = array(
         array("id_kegiatan", "required|min_length[1]|max_length[30]"),

@@ -5,7 +5,7 @@ if (!defined('BASEPATH'))
 
 class Cref_kegiatan extends Back_end {
 
-    public $model = 'model_ref_kegiatan';
+    public $model = 'model_ref_kegiatan_pegawai';
 
     public function __construct() {
         parent::__construct('kelola_pustaka_kegiatan', 'Pustaka Data Kegiatan');
