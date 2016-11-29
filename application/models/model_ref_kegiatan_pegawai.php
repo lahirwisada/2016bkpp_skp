@@ -38,7 +38,9 @@ class model_ref_kegiatan_pegawai extends ref_kegiatan {
         $result = FALSE;
         if ($keyword) {
             $this->db->order_by("id_kegiatan", "asc");
-            $this->db->where(" lower(" . $this->table_name . ".tahun) LIKE lower('%" . $keyword . "%') OR lower(" . $this->table_name . ".id_kegiatan) LIKE lower('%" . $keyword . "%')", NULL, FALSE);
+			$where = " lower(" . $this->table_name . ".nama_kegiatan) LIKE lower('%" . $keyword . "%')" 
+			."OR lower(" . $this->table_name . ".id_kegiatan) LIKE lower('%" . $keyword . "%')";
+            $this->db->where(, NULL, FALSE);
             $result = $this->get_where();
         }
         return $result;

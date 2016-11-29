@@ -20,10 +20,9 @@ class Cref_kegiatan_pegawai_tahunan extends Back_end {
 
     public function detail($id = FALSE) {
         parent::detail($id, array(
-            "id_kegiatan_pegawai_tahunan ", 
+            "tahun ", 
 			"id_kegiatan ", 
 			"id_pegawai ", 
-			"kegiatan_status", 
         ));
 
         $this->set("bread_crumb", array(
@@ -32,8 +31,10 @@ class Cref_kegiatan_pegawai_tahunan extends Back_end {
         ));
 
         $this->set("additional_js", array(
-            "back_end/" . $this->_name . "/js/detail_js",
-            "back_end/cpeserta_diklat/js/detail_isian_js",
+            "back_end/" . $this->_name . "/js/detail_isian_js",
+			"back_end/" . $this->_name . "/js/cfg_slc_kegiatan_js",
+			"back_end/" . $this->_name . "/js/cfg_slc_pegawai_js",
+            
         ));
 
         $this->add_cssfiles(array("plugins/select2/select2.min.css"));

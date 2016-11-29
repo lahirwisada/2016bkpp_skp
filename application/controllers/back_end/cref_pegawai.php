@@ -52,13 +52,20 @@ class Cref_pegawai extends Back_end {
 
     public function get_like() {
         $keyword = $this->input->post("keyword");
-        $id_skpd = $this->input->post("id_skpd");
+        $id_skpd = $this->input->post("id_pegawai");
 
         $data_found = $this->{$this->model}->get_like($keyword, $id_skpd);
 
         $this->to_json($data_found);
     }
+	public function get_like_suggestion(){
+		$keyword = $this->input->post("keyword");
+        $id_skpd = $this->input->post("id_pegawai");
 
+        $data_found = $this->{$this->model}->get_like($keyword, $id_skpd,FALSE);
+
+        $this->to_json($data_found);
+	}
     private function load_paging_riwayat_kepangkatan($id_pegawai) {
         $this->load_paging("model_tr_pegawai_golongan", "currpage_riwayat_pegawai_golongan", array(
             "records" => "records_riwayat_pegawai_golongan",

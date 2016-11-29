@@ -36,15 +36,15 @@ class tr_kegiatan_pegawai_tahunan extends LWS_model {
         ),
 		"m_kegiatan" => array(
             "fkey" => "id_kegiatan",
-            "reference_to" => "m_kegiatan",
+            
             "columns" => array(
                 "nama_kegiatan",
             ),
             "referenced" => "LEFT"
         ),
-		"tr_kegiatan_pegawai_tahunan" => array(
-            "fkey" => "id_kegiatan_unit",
-            "reference_to" => "tr_kegiatan_unit",
+		"tr_kegiatan_unit" => array(
+            "fkey" => "id_kegiatan",
+            "reference_to" => "m_kegiatan",
             "columns" => array(
 				"tahun",
 				"angka_kredit",

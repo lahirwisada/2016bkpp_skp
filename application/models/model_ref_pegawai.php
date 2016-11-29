@@ -52,7 +52,7 @@ class model_ref_pegawai extends ref_pegawai {
      */
     private function __join_tr_pegawai_skpd_ref_skpd($table_pegawai_skpd) {
         $table_skpd = $this->get_schema_name("ref_skpd");
-        $this->db->join($table_skpd, $table_skpd . ".id_skpd = " . $table_pegawai_skpd . ".id_skpd");
+        $this->db->join($table_skpd, $table_skpd . ".id_skpd = " . $table_pegawai_skpd . ".id_skpd","LEFT");
 
         $this->db->select(
                 $table_skpd . ".id_skpd, " .
@@ -121,12 +121,14 @@ class model_ref_pegawai extends ref_pegawai {
         }
     }
 
-    public function get_like($keyword = FALSE, $id_skpd = FALSE) {
+    public function get_like($keyword = FALSE, $id_skpd = FALSE,$using_id_skpd=TRUE) {
         $result = FALSE;
         if ($keyword) {
 
             $id_skpd = $id_skpd == 'false' ? FALSE : $id_skpd;
-            $this->__where_id_skpd($id_skpd);
+            if($using_id_skpd){
+			$this->__where_id_skpd($id_skpd);
+			}
             $this->__select_tr_pegawai_active_skpd();
             $this->select_field();
 

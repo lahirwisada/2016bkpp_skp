@@ -19,7 +19,13 @@ class Cref_kabupaten_kota extends Back_end {
     }
 
     public function detail($id = FALSE) {
-        parent::detail($id, array("id_provinsi","kode_kabupaten", "nama_kabupaten", "keterangan", "is_ibukota"));
+        parent::detail($id, array(
+			"id_provinsi",
+			"kode_kabupaten", 
+			"nama_kabupaten", 
+			"keterangan", 
+			"is_ibukota"
+		));
 
         $this->set("bread_crumb", array(
             "back_end/" . $this->_name => $this->_header_title,
