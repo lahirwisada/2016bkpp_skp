@@ -3,12 +3,12 @@
 if (!defined('BASEPATH'))
     exit('No direct script access allowed');
 
-class Cref_pegawai extends Back_end {
+class Cref_kegiatan_pegawai_tahunan extends Back_end {
 
     public $model = 'model_ref_pegawai';
 
     public function __construct() {
-        parent::__construct('kelola_pustaka_pegawai', 'Pustaka Data Pegawai');
+        parent::__construct('kelola_pustaka_pegawai', 'Pustaka Data Kegiatan Pegawai');
     }
 
     public function index() {
