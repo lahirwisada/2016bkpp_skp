@@ -28,7 +28,7 @@ class tr_kegiatan_pegawai_tahunan extends LWS_model {
     protected $related_tables = array(
 		"ref_pegawai" => array(
             "fkey" => "id_pegawai",
-            "reference_to" => "ref_pegawai",
+            
             "columns" => array(
 				"nama_sambung",
             ),
@@ -42,7 +42,7 @@ class tr_kegiatan_pegawai_tahunan extends LWS_model {
             ),
             "referenced" => "LEFT"
         ),
-		"tr_kegiatan_unit" => array(
+		"tr_kegiatan_pegawai_tahunan" => array(
             "fkey" => "id_kegiatan_unit",
             "reference_to" => "tr_kegiatan_unit",
             "columns" => array(
