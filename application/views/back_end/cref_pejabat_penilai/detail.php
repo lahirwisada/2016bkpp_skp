@@ -22,7 +22,7 @@ $detail = isset($detail) ? $detail : FALSE;
                         <label class="col-md-3 col-xs-12 control-label">Tahun *</label>
                         <div class="col-md-6 col-xs-12">
                             <?php
-                            $default_value_tahun = $detail ? $detail->tahun : date('Y');
+                            $default_value_tahun = $detail && isset($detail->tahun) ? $detail->tahun : date('Y');
                             echo dropdown_tahun('tahun', date('Y'), 5, 'class="form-control select"');
                             ?>
                             <?php /* <input type="text" name="tahun" class="form-control" value="<?php echo $detail ? $detail->tahun : ""; ?>"> */ ?>                                   

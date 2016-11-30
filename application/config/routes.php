@@ -39,8 +39,8 @@
 */
 
 //$route['default_controller'] = "front_end/home";
-$route['default_controller'] = "front_end/home";
 $route['back_end'] = "back_end/home";
+$route['default_controller'] = $route['back_end'];
 
 $route['back_bone/user'] = "back_bone/member";
 $route['back_bone/login'] = "back_bone/member/login";
