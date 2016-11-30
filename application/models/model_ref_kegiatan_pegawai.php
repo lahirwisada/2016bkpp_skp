@@ -40,7 +40,7 @@ class model_ref_kegiatan_pegawai extends ref_kegiatan {
             $this->db->order_by("id_kegiatan", "asc");
 			$where = " lower(" . $this->table_name . ".nama_kegiatan) LIKE lower('%" . $keyword . "%')" 
 			."OR lower(" . $this->table_name . ".id_kegiatan) LIKE lower('%" . $keyword . "%')";
-            $this->db->where(, NULL, FALSE);
+            $this->db->where($where, NULL, FALSE);
             $result = $this->get_where();
         }
         return $result;
