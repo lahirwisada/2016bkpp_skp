@@ -5,7 +5,7 @@ $active_record = TRUE;
 
 $db['default']['hostname'] = 'localhost';
 $db['default']['username'] = 'postgres';
-$db['default']['password'] = 'rahasia';
+$db['default']['password'] = 'postgres';
 $db['default']['database'] = 'db_skp';
 $db['default']['dbdriver'] = 'postgre';
 $db['default']['dbprefix'] = '';
